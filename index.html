@@ -11,12 +11,21 @@
     <h1 id="main-heading">Todo App</h1>
 
     <div class="grid-container">
+      <span></span>
       <input type="text" placeholder="Enter Todo Here" id="todo-input" />
       <input type="date" id="todo-date" />
       <button class="btn-todo" onclick="addTodo()">Add</button>
     </div>
 
     <div class="todo-container grid-container"></div>
+    <button
+      id="clear-button"
+      class="clear"
+      style="display: none"
+      onclick="clearAll()"
+    >
+      Clear
+    </button>
     <script src="todo.js"></script>
   </body>
 </html>
